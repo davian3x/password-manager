@@ -1,0 +1,127 @@
+# 🔐 Encrypted Password Manager
+
+A secure command-line password manager built in **Python** that stores credentials in an encrypted local vault using **Argon2id** and **AES-256-GCM**.
+
+This project was created to demonstrate secure software development, modern cryptography, and object-oriented programming.
+
+---
+
+## Features
+
+- Encrypts credentials using AES-256-GCM
+- Protects the master password with Argon2id
+- Add, retrieve, update, list, and delete credentials
+- Generate cryptographically secure passwords
+- Secure local JSON vault
+- Atomic file writes to reduce corruption
+- Command-line interface built with `argparse`
+
+---
+
+## Technologies
+
+- Python
+- Argon2id
+- Cryptography
+- AES-256-GCM
+- JSON
+- argparse
+- pathlib
+- dataclasses
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/davian3x/password-manager.git
+cd password-manager
+pip install -e .
+```
+
+---
+
+## Usage
+
+Create a vault
+
+```bash
+password-manager init
+```
+
+Add credentials
+
+```bash
+password-manager add github.com myusername --notes "Personal Account"
+```
+
+Retrieve credentials
+
+```bash
+password-manager get github.com
+```
+
+List saved credentials
+
+```bash
+password-manager list
+```
+
+Delete credentials
+
+```bash
+password-manager delete github.com
+```
+
+Generate a secure password
+
+```bash
+password-manager generate --length 24 --symbols
+```
+
+---
+
+## Security
+
+- AES-256-GCM authenticated encryption
+- Argon2id key derivation
+- Random cryptographic salts
+- Random AES-GCM nonces
+- Master password is never stored
+- Passwords are never written to disk in plaintext
+
+---
+
+## Skills Demonstrated
+
+- Python Programming
+- Object-Oriented Programming
+- Applied Cryptography
+- Secure Software Development
+- Command-Line Application Development
+- JSON Serialization
+- File Encryption
+
+---
+
+## Future Improvements
+
+- Password strength checker
+- Clipboard support
+- Import/Export functionality
+- Automatic encrypted backups
+- Unit testing
+
+---
+
+## Disclaimer
+
+This project was created for educational and portfolio purposes. It demonstrates secure programming concepts but has not been independently audited for production use.
+
+---
+
+## Author
+
+**Davian Davis**
+
+GitHub: https://github.com/davian3x
