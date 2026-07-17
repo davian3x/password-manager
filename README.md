@@ -1,5 +1,5 @@
 # password-manager
-A local, encrypted command-line password manager written in Python.
+local, encrypted command-line password manager written in Python.
 Your credentials are stored in a single encrypted vault file on disk, protected by one master
 password. The master password is never stored — it’s used to re-derive the encryption key
 each time you unlock the vault.
@@ -31,4 +31,4 @@ By default, the vault lives at ~/.password_manager/vault.json . Use --vault
 Security notes
 This is an educational/portfolio project. It has not been audited for production use.
 The master password is never written to disk or logged.
-Passwords are only ever plaintext in , after 
+Passwords are only ever plaintext in , 
