@@ -31,4 +31,4 @@ By default, the vault lives at ~/.password_manager/vault.json . Use --vault
 Security notes
 This is an educational/portfolio project. It has not been audited for production use.
 The master password is never written to disk or logged.
-Passwords are only ever plaintext in memory, after a successful unloc
+Passwords are only ever plaintext in , after 
